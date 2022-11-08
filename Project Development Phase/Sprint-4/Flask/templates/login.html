@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/login.css">
+    <script src="../static/js/login.js"></script>
+    <title>Document</title>
+    <script>
+        function myFun()
+        {
+            window.location.href="final.html";   
+        }
+    </script>
+</head>
+<body>
+    <div class="login">
+        <form name='form-login'>
+    
+            <h1 style="color: white;">REGISTER</h1>
+    
+            <label for="name" style="color: white;">Email</label>
+            <input type="email" id="name" placeholder="Username" required>
+    
+            <label for="pw" style="color: white;">Password</label>
+            <input type="password"
+                   id= "pw"
+                   placeholder="Password" required>
+            <input id="rgstr_btn" type="submit" value="Register" onclick="store()">
+    
+        </form>
+    </div>
+    
+    <div class="login">
+        <form name='form-login'>
+    
+            <h1 style="color: white;">SIGN IN</h1>
+    
+            <label for="userName" style="color: white;">Email</label>
+            <input type="email" id="userName" placeholder="Username" required>
+    
+            <label for="userPw" style="color: white;">Password</label>
+            <input type="password" id= "userPw" placeholder="Password" required>
+    
+            <div id="remember">
+                <input type="checkbox" value="lsRememberMe" id="rememberMe"
+                       style="display: inline-block;">
+                <label style="color: white;">Remember me</label>
+            </div>
+    
+            <input id= "login_btn" type="submit" value="Login" onclick="check()">
+    
+        </form>
+    </div>
+    
+</body>
+</html>
