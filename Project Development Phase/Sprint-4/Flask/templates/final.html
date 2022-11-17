@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Check Your Website</title>
+        <link rel="stylesheet" href="../static/css/style.css">
+    </head>
+    <body>
+        <div class="predict-page">
+            <h1>Check Your Website</h1>
+            <form action="{{ url_for('y_predict') }}" method="post">
+                <p>Enter URL</p>
+                <input type="text" name="URL" placeholder="URL">
+                <a href= {{ url }} >
+                <button style="right: -20%; top: 10px;" type="submit"><span></span> Predict </button>
+            </a>
+            </form>
+            <div style="text-align: center ;">
+                <div id='result', style="color: green;padding-top: 2rem;font-size: 2.2rem;" font-size:30px;>{{ prediction_text }}</div>
+                  <a href=" {{ url }} "> {{ url }} </a>
+                </div>
+        </div>
+    </body>
+</html>
